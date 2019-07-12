@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+
+    <ListView
+        android:layout_below="@id/rlParent"
+        android:id="@+id/lvDanhba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        ></ListView>
+
+    <RelativeLayout
+        android:id="@+id/rlParent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+
+        >
+        <EditText
+            android:id="@+id/edTimkiem"
+            android:hint="Tìm Kiếm"
+            android:layout_width="@dimen/_240sdp"
+
+            android:layout_height="wrap_content"
+
+            />
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_toEndOf="@id/edTimkiem"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentEnd="true"
+
+            android:background="@mipmap/plus"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lvDanhba"
+        android:text="Tim kiem"/>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvFind"
+        android:layout_below="@id/tk">
+
+    </ListView>
+</RelativeLayout>
